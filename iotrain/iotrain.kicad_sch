@@ -4489,28 +4489,22 @@
 		(uuid "0c592e6a-2bb3-459a-b35c-f070426b5c53")
 	)
 	(junction
-		(at 173.99 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12e46aaf-7864-4ab5-823d-12c0009d825b")
-	)
-	(junction
 		(at 195.58 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "168a37ec-9061-4415-a430-8b3b1fbc1ab4")
 	)
 	(junction
-		(at 173.99 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1cc8d4a5-fe80-4fa6-ab27-b3a283235dc5")
-	)
-	(junction
 		(at 64.77 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "20d69149-7799-46d0-b39a-bc76d4ba2501")
+	)
+	(junction
+		(at 35.56 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26e9673d-93bc-4c63-9100-ba9c6f683050")
 	)
 	(junction
 		(at 205.74 22.86)
@@ -4878,7 +4872,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 22.86) (xy 184.15 22.86)
+			(xy 163.83 22.86) (xy 184.15 22.86)
 		)
 		(stroke
 			(width 0)
@@ -4988,16 +4982,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 30.48) (xy 173.99 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4136e428-eccd-4cf8-a76a-291b21cff69c")
-	)
-	(wire
-		(pts
 			(xy 198.12 69.85) (xy 198.12 73.66)
 		)
 		(stroke
@@ -5065,16 +5049,6 @@
 			(type default)
 		)
 		(uuid "5443b904-3bc6-42d5-8a72-a905d3d7d7ff")
-	)
-	(wire
-		(pts
-			(xy 163.83 22.86) (xy 173.99 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bb9e817-d58a-411a-a436-47208dd679f3")
 	)
 	(wire
 		(pts
@@ -5248,7 +5222,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 30.48) (xy 184.15 30.48)
+			(xy 163.83 30.48) (xy 184.15 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5365,6 +5339,16 @@
 			(type default)
 		)
 		(uuid "d15d76f3-fb94-4edc-b250-9fdf6a74d0ac")
+	)
+	(wire
+		(pts
+			(xy 35.56 111.76) (xy 35.56 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daa47f28-64c4-4360-90e4-0c2f2a312917")
 	)
 	(wire
 		(pts
@@ -5781,6 +5765,28 @@
 			)
 		)
 	)
+	(global_label "SCL"
+		(shape bidirectional)
+		(at 27.94 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "21d24d53-a6b2-44ce-bae2-d0acfdfd95a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.3359 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "I2S_LR"
 		(shape input)
 		(at 240.03 80.01 180)
@@ -5803,7 +5809,7 @@
 			)
 		)
 	)
-	(global_label "PROG_EN"
+	(global_label "CHIP_EN"
 		(shape bidirectional)
 		(at 140.97 166.37 180)
 		(fields_autoplaced yes)
@@ -5815,11 +5821,34 @@
 		)
 		(uuid "2e0b6bc1-05ec-4687-a44b-1e61229b45e3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at -54.61 60.96 0)
+			(at 128.9511 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 27.94 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e8e6c94-f8b1-41dc-b959-da8b207e3389")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 20.2754 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -7448,7 +7477,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 68.2752 25.4 0)
 			(effects
 				(font
@@ -7643,6 +7672,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 35.56 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20aff1e9-7093-4d84-80e8-b9860051fa5e")
+		(property "Reference" "#PWR014"
+			(at 35.56 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 35.56 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 35.56 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59d82d94-70e5-4f8e-a670-d6f8b11dcbc8")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 242.57 130.81 180)
 		(unit 1)
@@ -7731,7 +7826,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at -50.8 117.348 90)
 			(effects
 				(font
@@ -7800,7 +7895,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at -62.23 147.6248 0)
 			(effects
 				(font
@@ -7933,7 +8028,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0402"
 			(at 196.5452 30.48 0)
 			(effects
 				(font
@@ -8132,7 +8227,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
+		(property "Footprint" "liebler_MECH:SW_SPST_TL3342_smaller_handsolder"
 			(at 135.89 179.07 0)
 			(effects
 				(font
@@ -8405,7 +8500,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at -62.23 157.7848 0)
 			(effects
 				(font
@@ -8474,7 +8569,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 73.3552 38.1 0)
 			(effects
 				(font
@@ -8736,7 +8831,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at -86.36 41.148 90)
 			(effects
 				(font
@@ -8804,7 +8899,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 49.53 30.48 0)
 			(effects
 				(font
@@ -8871,7 +8966,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 142.748 170.18 90)
 			(effects
 				(font
@@ -8940,7 +9035,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 204.1652 40.64 0)
 			(effects
 				(font
@@ -9009,7 +9104,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 172.72 54.61 0)
 			(effects
 				(font
@@ -9078,7 +9173,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 185.1152 30.48 0)
 			(effects
 				(font
@@ -9276,7 +9371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 166.6748 62.23 0)
 			(effects
 				(font
@@ -9410,7 +9505,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 149.098 162.56 90)
 			(effects
 				(font
@@ -9640,7 +9735,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 232.918 41.91 90)
 			(effects
 				(font
@@ -10231,7 +10326,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at -86.36 22.098 90)
 			(effects
 				(font
@@ -10362,7 +10457,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 99.06 55.118 90)
 			(effects
 				(font
@@ -10431,7 +10526,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0402"
 			(at 243.5352 30.48 0)
 			(effects
 				(font
@@ -10645,7 +10740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 179.3748 132.08 0)
 			(effects
 				(font
@@ -10714,7 +10809,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 187.6552 139.7 0)
 			(effects
 				(font
@@ -10913,7 +11008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 232.918 26.67 90)
 			(effects
 				(font
@@ -11088,6 +11183,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 31.75 111.76 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91c96457-b64a-4356-b660-c81ab55ade7f")
+		(property "Reference" "R11"
+			(at 31.75 109.474 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 31.75 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
+			(at 31.75 113.538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7c92bb40-ef63-488d-b5f4-30547259cb0f")
+		)
+		(pin "1"
+			(uuid "728f881b-2931-4d20-91c6-338ecbfff578")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 73.66 134.62 0)
 		(unit 1)
@@ -11226,6 +11388,71 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9805eb30-f251-4bd8-957e-ba24ff9d95bc")
+		(property "Reference" "#PWR013"
+			(at 231.14 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 49.022 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 231.14 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f32870d6-1683-4a16-9350-da84a4253e6a")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -11390,7 +11617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0402"
 			(at 242.2652 69.85 0)
 			(effects
 				(font
@@ -11591,7 +11818,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 54.3052 25.4 0)
 			(effects
 				(font
@@ -11628,6 +11855,73 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 31.75 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a178b31f-d515-4262-8cb5-ca66f3400d6d")
+		(property "Reference" "R12"
+			(at 31.75 114.554 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 31.75 116.84 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
+			(at 31.75 118.618 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2e206eae-bba3-4975-a5db-87340b935864")
+		)
+		(pin "1"
+			(uuid "f032404f-d7ef-4215-9c0a-065e2c9f2870")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -11787,7 +12081,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 232.918 34.29 90)
 			(effects
 				(font
@@ -12476,7 +12770,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
+		(property "Footprint" "liebler_MECH:SW_SPST_TL3342_smaller_handsolder"
 			(at 116.84 179.07 0)
 			(effects
 				(font
@@ -12880,7 +13174,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0402"
 			(at 164.7952 30.48 0)
 			(effects
 				(font
@@ -12949,7 +13243,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 68.2752 38.1 0)
 			(effects
 				(font
@@ -13152,7 +13446,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 46.6852 38.1 0)
 			(effects
 				(font
@@ -13287,7 +13581,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 54.3052 38.1 0)
 			(effects
 				(font
@@ -13391,75 +13685,6 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 173.99 26.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d9280018-9a9d-4244-8f1e-7d86f2054e37")
-		(property "Reference" "C13"
-			(at 173.99 24.892 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u/20V"
-			(at 174.244 28.702 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 174.9552 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 173.99 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48d1274d-0621-40ae-9572-cda8ed7a688c")
-		)
-		(pin "2"
-			(uuid "0cab5ddd-b207-4c2b-a9a1-c39be5ad8825")
-		)
-		(instances
-			(project "iotrain"
-				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
-					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -13624,7 +13849,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 194.0052 140.97 0)
 			(effects
 				(font
@@ -13758,7 +13983,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0402"
 			(at 40.3352 38.1 0)
 			(effects
 				(font
@@ -13959,7 +14184,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 176.8348 62.23 0)
 			(effects
 				(font
@@ -14094,7 +14319,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 148.2852 173.99 0)
 			(effects
 				(font
@@ -14161,7 +14386,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at -58.42 120.142 90)
 			(effects
 				(font
@@ -14230,7 +14455,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
 			(at 248.6152 69.85 0)
 			(effects
 				(font
@@ -14299,7 +14524,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0402"
 			(at 154.6352 30.48 0)
 			(effects
 				(font
