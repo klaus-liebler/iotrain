@@ -3500,6 +3500,258 @@
 				)
 			)
 		)
+		(symbol "liebler_OPTO:XL-1010RGBC-WS2812B"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D?"
+				(at 2.54 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "XL-1010RGBC-WS2812B"
+				(at 16.51 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "liebler_OPTO:XL-1010RGBC-WS2812B"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at -0.254 -23.876 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel Nano addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*SK6805*PLCC*2.4x2.7mm*P1.3mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XL-1010RGBC-WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "XL-1010RGBC-WS2812B_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "XL-1010RGBC-WS2812B_1_1"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "liebler_SEMICONDUCTORS:DRV8876RGT"
 			(pin_names
 				(offset 1.016)
@@ -4699,6 +4951,12 @@
 		(uuid "cdf4e58a-d351-486e-a3f6-b06125fb4dea")
 	)
 	(junction
+		(at 226.06 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2fb8be3-2aa5-4e0b-92f8-0a8573670ed5")
+	)
+	(junction
 		(at 67.31 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4733,6 +4991,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa8ad3b3-eeee-4e5e-8578-1a67ee99685a")
+	)
+	(junction
+		(at 195.58 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff58b7be-05f6-4cb2-ae90-69a70a83933f")
 	)
 	(no_connect
 		(at 182.88 31.75)
@@ -5319,6 +5583,16 @@
 			(type default)
 		)
 		(uuid "bd217d57-8786-4048-ad7b-073fa87c59c9")
+	)
+	(wire
+		(pts
+			(xy 203.2 96.52) (xy 218.44 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3d8b566-9c0e-4235-bc94-03ff93c74f05")
 	)
 	(wire
 		(pts
@@ -6005,6 +6279,28 @@
 			)
 		)
 	)
+	(global_label "RGB_LED"
+		(shape input)
+		(at 187.96 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1dd80375-2298-468c-aaa3-02954b7e6e92")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.7501 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SCL"
 		(shape bidirectional)
 		(at 214.63 64.77 180)
@@ -6463,6 +6759,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RGB_LED"
+		(shape output)
+		(at 95.25 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9de2f6f9-15e4-4b4a-ab80-5983cd9292ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.4599 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6946,6 +7264,73 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0123e6d9-f6f6-4e1c-b6c1-342047ba84cb")
+		(property "Reference" "#PWR054"
+			(at 219.71 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 222.25 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6ae091b-652b-4373-b006-c886116924e9")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR054")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -8237,7 +8622,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u/20V"
+		(property "Value" "10u/25V"
 			(at 172.974 29.972 0)
 			(effects
 				(font
@@ -8246,7 +8631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "liebler_PASSIVES:SMD0402"
+		(property "Footprint" "liebler_PASSIVES:SMD0603"
 			(at 173.6852 31.75 0)
 			(effects
 				(font
@@ -8283,6 +8668,142 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 195.58 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2fc42d03-bd00-469d-b740-ce9c189f3b01")
+		(property "Reference" "#PWR052"
+			(at 201.93 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 104.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 195.58 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b3e1dc63-20d1-49ff-b62a-9713402be675")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 195.58 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31b007a5-86f1-494e-9f06-d70bfe80bf39")
+		(property "Reference" "C13"
+			(at 198.628 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "u1"
+			(at 195.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
+			(at 196.5452 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebdeceb0-194b-4a56-a628-d38ceccc5856")
+		)
+		(pin "2"
+			(uuid "bcdc838d-54bf-4976-9e19-49616e9c25a7")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -8445,7 +8966,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "liebler_MECH:SW_SPST_TL3342_smaller_handsolder"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
 			(at 125.73 133.35 0)
 			(effects
 				(font
@@ -9381,7 +9902,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u/20V"
+		(property "Value" "22u/25V"
 			(at 164.084 29.972 0)
 			(effects
 				(font
@@ -9390,7 +9911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "liebler_PASSIVES:SMD0805"
 			(at 164.7952 31.75 0)
 			(effects
 				(font
@@ -9491,6 +10012,75 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 226.06 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "586d54de-9a60-4803-9c63-413f13267636")
+		(property "Reference" "C23"
+			(at 229.108 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "u1"
+			(at 226.06 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "liebler_PASSIVES:SMD0201"
+			(at 227.0252 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 226.06 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86113fcb-6d60-4c48-9fde-1e4c09c2cdfb")
+		)
+		(pin "2"
+			(uuid "137f787b-c2a8-435a-9a7e-5191bda8d5c5")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -10717,6 +11307,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 195.58 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c4ac042-27a7-4071-a408-0da4ca948e9f")
+		(property "Reference" "#PWR044"
+			(at 199.39 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 191.77 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fe503c2-affc-4ef1-8392-0b225e4f78d5")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 213.36 29.21 0)
 		(unit 1)
@@ -11063,6 +11720,73 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ae3a4e0-2e1a-45ac-9597-402f985c78e3")
+		(property "Reference" "#PWR053"
+			(at 232.41 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 104.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 226.06 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f76d64d-260b-44ef-828f-a142e8ffa4fa")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -11547,6 +12271,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 195.58 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92ce530a-2b73-483a-8d17-394c2f1c6a05")
+		(property "Reference" "#PWR055"
+			(at 189.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 191.77 81.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 195.58 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4e167914-988d-487b-88dc-28ede78b6321")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 99.06 29.21 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11605,6 +12396,82 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "liebler_OPTO:XL-1010RGBC-WS2812B")
+		(at 226.06 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96ce6e28-f1aa-4ba5-aa66-62411a09c5ab")
+		(property "Reference" "D7"
+			(at 245.11 90.2014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-WS2812B"
+			(at 245.11 92.7414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "liebler_OPTO:XL-1010RGBC-WS2812B"
+			(at 227.33 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 225.806 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "454f7e84-a488-448b-9b88-b2e0e70093f7")
+		)
+		(pin "4"
+			(uuid "9def008b-ac89-4a0f-8b53-c4e3d66add1b")
+		)
+		(pin "2"
+			(uuid "0c647d1a-d3b6-4268-afb4-1a92a0e5eb15")
+		)
+		(pin "3"
+			(uuid "71449dba-451f-4669-a6e8-28705947448c")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -12268,6 +13135,73 @@
 			(project "iotrain"
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 226.06 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5d7ee7b-d99e-4e1d-8566-a1720b84d906")
+		(property "Reference" "#PWR051"
+			(at 229.87 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 222.25 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 226.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "446eb3e1-62cb-44a5-8b7d-b575da33054a")
+		)
+		(instances
+			(project "iotrain"
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -12987,7 +13921,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "liebler_MECH:SW_SPST_TL3342_smaller_handsolder"
+		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
 			(at 106.68 133.35 0)
 			(effects
 				(font
@@ -13382,7 +14316,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u/20V"
+		(property "Value" "10u/25V"
 			(at 155.194 29.972 0)
 			(effects
 				(font
@@ -13391,7 +14325,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "liebler_PASSIVES:SMD0402"
+		(property "Footprint" "liebler_PASSIVES:SMD0603"
 			(at 155.9052 31.75 0)
 			(effects
 				(font
@@ -13497,6 +14431,82 @@
 			(project ""
 				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "liebler_OPTO:XL-1010RGBC-WS2812B")
+		(at 195.58 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d22cf3d3-6d9a-4a94-a059-d95d07ecb770")
+		(property "Reference" "D6"
+			(at 214.63 90.2014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-1010RGBC-WS2812B"
+			(at 214.63 92.7414 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "liebler_OPTO:XL-1010RGBC-WS2812B"
+			(at 196.85 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 195.326 120.396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0db39c69-8b3b-473c-876e-2e1c8be15fc5")
+		)
+		(pin "4"
+			(uuid "90e44844-4ad4-4052-b183-78571f7584fe")
+		)
+		(pin "2"
+			(uuid "53b89065-5eb4-4d93-bac0-c17dfc1d1017")
+		)
+		(pin "3"
+			(uuid "acbc928c-2c67-41e0-8773-6193056c0aaa")
+		)
+		(instances
+			(project ""
+				(path "/a376a2b2-8104-4b30-809c-76cb871aa5c7"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -14730,7 +15740,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u/20V"
+		(property "Value" "10u/25V"
 			(at 146.304 29.972 0)
 			(effects
 				(font
@@ -14739,7 +15749,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "liebler_PASSIVES:SMD0402"
+		(property "Footprint" "liebler_PASSIVES:SMD0603"
 			(at 147.0152 31.75 0)
 			(effects
 				(font
